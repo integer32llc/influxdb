@@ -11,7 +11,7 @@ async-trait = "0.1"
 clap_blocks = { path = "../clap_blocks" }
 futures = "0.3.28"
 generated_types = { path = "../generated_types" }
-hyper = "0.14"
+hyper = { version = "0.14", features = ["backports", "deprecated"] }
 ingester = { path = "../ingester" }
 iox_catalog = { path = "../iox_catalog" }
 iox_query = { version = "0.1.0", path = "../iox_query" }
